@@ -4,9 +4,15 @@ This repository showcases my graduate thesis project focused on leveraging YOLOv
 
 ## Installation
 
+0. Create python virtual enviroment: 
+```(bash)
+python -m venv [venv_name]
+source [venv_name]/scripts/activate
+```
 1. Clone this repository: 
 ```(bash)
-https://github.com/lakyfarky/Realtime-object-detection-and-tracking-with-YOLOv8-and-StrongSORT.git
+git clone https://github.com/lakyfarky/Realtime-object-detection-and-tracking-with-YOLOv8-and-StrongSORT.git
+cd 'Realtime-object-detection-and-tracking-with-YOLOv8-and-StrongSORT'
 ```
 2. Install PyTorch (CUDA 11.8, **skip if don't have NVIDIA GPU with CUDA support**):
 ```(bash)
