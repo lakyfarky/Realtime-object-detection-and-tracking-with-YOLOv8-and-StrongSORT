@@ -96,7 +96,7 @@ class ObjectDetection:
         self.cap.release()
         cv2.destroyAllWindows()
 
-test_vid = r"test_vid\video1.mp4"
+test_vid = "test_vid/video1.mp4"
 model_weights = "yolov8n.pt"
 detector = ObjectDetection(model_weights, test_vid)
 detector()
