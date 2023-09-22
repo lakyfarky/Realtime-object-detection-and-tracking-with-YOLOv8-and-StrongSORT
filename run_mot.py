@@ -56,7 +56,7 @@ class ObjectDetection:
             class_id = int(track[6])
             class_name = self.classes[class_id]
             cv2.rectangle(frame, (x1,y1), (x2, y2), self.colors(class_id), 2)
-            label = f'ID={id}'
+            label = f'{class_name} {id}'
             (w, h), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 2)
             cv2.rectangle(frame, (x1, y1-h-15), (x1+w, y1), self.colors(class_id), -1)
             cv2.putText(frame, label, (x1,y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255) , 2)
@@ -84,7 +84,7 @@ class ObjectDetection:
             detections = self.predict(frame)
             for dets in detections:
                 tracks = tracker.update(dets.boxes.data.to("cpu").numpy(), frame)
-                if len(tracks.shape) == 2 and tracks.shape[1]==7:
+                if len(tracks.shape) == 2 and tracks.shape[1] == 8:
                     frame = self.draw_tracks(frame, tracks)
             end_time = perf_counter()
             fps = 1/np.round(end_time - start_time, 2)
