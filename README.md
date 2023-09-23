@@ -2,6 +2,7 @@
 
 This repository showcases my graduate thesis project focused on leveraging YOLOv8 for real-time object detection and integrating StrongSORT for accurate object tracking. By harnessing drone-captured data, this project explores the synergy between advanced computer vision algorithms and aerial imagery, opening up new possibilities for surveillance, mapping, etc.
 
+[Imgur](https://imgur.com/z407DNo)
 ## Installation
 
 0. Create python virtual enviroment: 
@@ -48,3 +49,13 @@ from ultralytics.nn.modules import (ESPP, AIFI, C1, C2, C3, C3TR, SPP, SPPF, Bot
                                     RTDETRDecoder, Segment)
 ```
 </details>
+
+## Used Repositories
+
+Here are the repositories that I've used in this project:
+
+1. [Ultralytics](https://github.com/ultralytics/ultralytics)
+
+2. [Boxmot](https://github.com/mikel-brostrom/yolo_tracking)
+
+3. [VisDrone2019](https://github.com/VisDrone/VisDrone-Dataset)
