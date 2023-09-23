@@ -2,7 +2,7 @@
 
 This repository showcases my graduate thesis project focused on leveraging YOLOv8 for real-time object detection and integrating StrongSORT for accurate object tracking. By harnessing drone-captured data, this project explores the synergy between advanced computer vision algorithms and aerial imagery, opening up new possibilities for surveillance, mapping, etc.
 
-![Imgur](https://imgur.com/z407DNo)
+![Imgur](https://imgur.com/z407DNo.gif)
 ## Installation
 
 0. Create python virtual enviroment: 
